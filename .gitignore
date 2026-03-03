@@ -36,6 +36,7 @@ __pycache__/
 .coverage
 venv/
 env/
+.venv
 
 # ==========================================
 # IDEs (VSCode, Visual Studio, etc.)

@@ -24,6 +24,7 @@ PYBIND11_MODULE(montecarlo_engine, m) {
         .def_readonly("counter", &montecarlo::Result::counter);
 
     m.def("run_montecarlo", &montecarlo::Montecarlo, "Executes the N simulations",
+          py::call_guard<py::gil_scoped_release>(),
           py::arg("S_0"), py::arg("volatility"), py::arg("K"), 
           py::arg("T"), py::arg("r"), py::arg("OT"), py::arg("N"));
 }

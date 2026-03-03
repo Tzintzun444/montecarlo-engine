@@ -9,7 +9,7 @@ def main():
     T = 1.0
     r = 0.05
     OT = montecarlo_engine.OptionType.Call
-    N = 1_000_000 
+    N = 50_000_000
 
     print(f"Initializing Montecarlo simulation with N = {N}...")
     
